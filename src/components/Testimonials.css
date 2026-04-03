@@ -1,0 +1,130 @@
+.testimonials {
+  padding: 120px 5%;
+  background: var(--color-black);
+  position: relative;
+}
+
+.testimonials__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonials__slider {
+  text-align: center;
+  position: relative;
+}
+
+.testimonials__quote-icon {
+  color: var(--color-gold);
+  opacity: 0.2;
+  margin-bottom: 32px;
+}
+
+.testimonials__card {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__text {
+  font-family: var(--font-accent);
+  font-size: 1.4rem;
+  color: var(--color-white-muted);
+  line-height: 1.8;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 40px;
+  max-width: 650px;
+}
+
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonials__author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.testimonials__author-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.testimonials__author-role {
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  margin-top: 2px;
+}
+
+.testimonials__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.testimonials__arrow {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201, 169, 78, 0.3);
+  color: var(--color-gold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.testimonials__arrow:hover {
+  background: rgba(201, 169, 78, 0.1);
+  border-color: var(--color-gold);
+}
+
+.testimonials__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.testimonials__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.testimonials__dot.active {
+  background: var(--color-gold);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 80px 5%;
+  }
+
+  .testimonials__text {
+    font-size: 1.15rem;
+  }
+}

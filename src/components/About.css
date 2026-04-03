@@ -1,0 +1,128 @@
+.about {
+  padding: 120px 5%;
+  background: var(--color-dark);
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--color-gold), transparent);
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.about__description {
+  font-size: 1.05rem;
+  color: var(--color-white-muted);
+  line-height: 1.9;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.about__description strong {
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.about__values {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about__value-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 24px;
+  background: rgba(201, 169, 78, 0.04);
+  border: 1px solid rgba(201, 169, 78, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.about__value-card:hover {
+  background: rgba(201, 169, 78, 0.08);
+  border-color: rgba(201, 169, 78, 0.25);
+}
+
+.about__value-icon {
+  color: var(--color-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.about__value-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-white);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.about__value-desc {
+  font-size: 0.9rem;
+  color: var(--color-white-dim);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(201, 169, 78, 0.15);
+}
+
+.about__stat {
+  text-align: center;
+}
+
+.about__stat-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-bottom: 8px;
+}
+
+.about__stat-label {
+  font-size: 0.8rem;
+  color: var(--color-white-dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 5%;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about__stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
